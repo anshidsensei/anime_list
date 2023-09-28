@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow-y: auto;
+}
+h2,
+th {
+  cursor: default;
+}
+
+main {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid grey;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 6em;
+  border: 3px solid gray;
+  padding: 0.5em;
+  border-radius: 0.75em;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+/* .space{
+    padding-right: 0.75em;
+
+} */
+.wrap {
+  max-height: 80vh; /* Adjust this value to your preferred max height */
+  overflow-y: auto; /* Enable vertical scrolling when the content exceeds max height */
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: auto;
+  table-layout: fixed;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+th {
+  padding: 2em 0em;
+  background-color: #f0f0f0;
+}
+
+td {
+  padding: 1em 0em;
+  /* border-bottom: 1px solid grey; */
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+/* .button{
+    color: white;
+    font-size: 2em;
+    width: px;
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+} */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  /* Button color */
+  color: #fff;
+  /* Text color */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  /* Add hover effect */
+}
+
+.button:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  /* Increase shadow on hover */
+}
+
+input,
+select,
+button {
+  display: block;
+  box-sizing: border-box;
+  width: 26em;
+  height: 4em;
+  margin: 0.25em;
+  padding: 0em 2em;
+  color: grey;
+  border-radius: 1em;
+  border: 2px solid black;
+  text-transform: uppercase;
+}
+
+/* Style the button */
+.my-button {
+  background-color: #57bb7d;
+  /* Default background color */
+  color: #fff;
+  /* Default text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease,
+    box-shadow 0.3s ease;
+  /* Transition effect for background color, scale, and box shadow */
+}
+
+/* Change the background color on hover */
+.my-button:hover {
+  background-color: #18c5e4;
+  /* Background color on hover */
+}
+
+/* Change the background color and add a shadow when the button is active (clicked) */
+.my-button:active {
+  background-color: #1f618d;
+  /* Background color when active (clicked) */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Add a box shadow when active (clicked) */
+}
+
+a {
+  text-decoration: none;
+}
+
+.add {
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69);
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12.5px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  moz-transition: all 0.4s ease-in-out;
+  border: none;
+}
+
+.add:hover {
+  background-image: linear-gradient(to right, #ec8c69, #f7186a);
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.add:focus {
+  outline: none;
+}
+
+.addbtn {
+  fill: white;
+}
+
+/* .submit{
+    border-radius: 2em;
+} */
+.btn-hover {
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 12.5px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+/* Style the enter button with a left-to-right gradient */
+.btn-hover.color-10 {
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form > * {
+  margin: 0.5em 0em;
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+}
+.pppp {
+  position: absolute;
+
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+.aa {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+a {
+  display: block;
+}
+#usthad {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.info h2 {
+  margin-top: 2em;
+}
+.info {
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}

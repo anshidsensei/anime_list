@@ -1,0 +1,84 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Take full height of the screen */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    background-color: #f0f0f0;
+    /* Set a background color */
+}
+
+/* Style the main container */
+main {
+    text-align: center;
+}
+
+/* Style the image */
+img {
+    width: 300px;
+    /* Adjust the image size as needed */
+    height: auto;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 36px;
+    /* Increase the text size */
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    /* Add spacing between image and heading */
+}
+
+/* Style the enter button */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+/* Style the enter button with a left-to-right gradient */
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
